@@ -1,6 +1,32 @@
 # go-emoji-
 
-Converts string of country codes to emoji s in Go.
+Converts a string country code to an emoji in Go.
+
+## Install
+
+```
+go get -u github.com/jayco/go-emoji-flag
+```
+
+## Usage
+
+Will return a flag from the supported list below or an empty string if the flag is not found.
+
+```go
+package main
+
+import (
+	"fmt"
+
+	emoji "github.com/jayco/go-emoji-flag"
+)
+
+func main() {
+	fmt.Println(emoji.GetFlag("AUS"))
+}
+```
+
+## Supported Flags:
 
 ```
  BRB/BB - 🇧🇧

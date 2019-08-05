@@ -1,5 +1,9 @@
 package emojiflag
 
+import (
+	"strings"
+)
+
 var countryMap = map[string]string{
 	"AFG": "AF",
 	"ALA": "AX",
@@ -252,6 +256,9 @@ var countryMap = map[string]string{
 
 // GetFlag returns a best attempt at matching a country code flag
 func GetFlag(countryCode string) string {
-	cc := countryMap[countryCode]
-	return string(0x1F1E6+rune(cc[0])-'A') + string(0x1F1E6+rune(cc[1])-'A')
+	code := strings.ToUpper(countryCode)
+	if cc, ok := countryMap[code]; ok {
+		return string(0x1F1E6+rune(cc[0])-'A') + string(0x1F1E6+rune(cc[1])-'A')
+	}
+	return ""
 }
