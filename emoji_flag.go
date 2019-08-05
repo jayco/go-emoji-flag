@@ -257,8 +257,19 @@ var countryMap = map[string]string{
 // GetFlag returns a best attempt at matching a country code flag
 func GetFlag(countryCode string) string {
 	code := strings.ToUpper(countryCode)
-	if cc, ok := countryMap[code]; ok {
-		return string(0x1F1E6+rune(cc[0])-'A') + string(0x1F1E6+rune(cc[1])-'A')
+	if len(code) == 3 {
+		if cc, ok := countryMap[code]; ok {
+			return string(0x1F1E6+rune(cc[0])-'A') + string(0x1F1E6+rune(cc[1])-'A')
+		}
 	}
+
+	if len(code) == 2 {
+		for _, v := range countryMap {
+			if code == v {
+				return string(0x1F1E6+rune(code[0])-'A') + string(0x1F1E6+rune(code[1])-'A')
+			}
+		}
+	}
+
 	return ""
 }

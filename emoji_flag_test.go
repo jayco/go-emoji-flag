@@ -15,13 +15,23 @@ func Test_getFlag(t *testing.T) {
 		expectedLen int
 	}{
 		{
-			"Should handle correct input",
+			"Should handle correct 3 char input",
 			args{"AUS"},
 			8,
 		},
 		{
-			"Should return empty string if match cannot be found",
+			"Should handle correct 2 char input",
+			args{"AU"},
+			8,
+		},
+		{
+			"Should return empty string if no 3 letter match can be found",
 			args{"BOB"},
+			0,
+		},
+		{
+			"Should return empty string if no 2 letter match can be found",
+			args{"AA"},
 			0,
 		},
 		{

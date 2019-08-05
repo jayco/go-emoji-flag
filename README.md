@@ -22,7 +22,9 @@ import (
 )
 
 func main() {
-	fmt.Println(emoji.GetFlag("AUS"))
+	fmt.Println(emoji.GetFlag("AUS"))   // prints 🇦🇺
+	fmt.Println(emoji.GetFlag("AU"))    // prints 🇦🇺
+	fmt.Println(emoji.GetFlag("BOB"))   // prints
 }
 ```
 
