@@ -1,4 +1,4 @@
-# go-emoji-
+# go-emoji-flag
 
 Converts a string country code to an emoji in Go.
 
