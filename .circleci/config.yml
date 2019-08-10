@@ -8,6 +8,4 @@ jobs:
       - checkout
       - run:
           name: Run tests
-          command: |
-            go vet -vettool=$(which shadow) ./...
-            go test -v -count=1 -race $$(go list ./...)
+          command: make test
