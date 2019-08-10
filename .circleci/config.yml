@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/golang:1.12
+    working_directory: /go/src/github.com/jayco/go-emoji-flag
+    steps:
+      - checkout
+      - run:
+          name: Run tests
+          command: |
+            go vet -vettool=$(which shadow) ./...
+            go test -v -count=1 -race $$(go list ./...)

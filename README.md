@@ -1,5 +1,9 @@
 # go-emoji-flag
 
+[![CircleCI](https://circleci.com/gh/jayco/go-emoji-flag.svg?style=svg)](https://circleci.com/gh/jayco/go-emoji-flag)
+[![GolangCI](https://golangci.com/badges/github.com/jayco/go-emoji-flag.svg)](https://golangci.com)
+[![Go Report Card](https://goreportcard.com/badge/github.com/jayco/go-emoji-flag)](https://golangci.com)
+
 Converts a string country code to an emoji in Go.
 
 ## Install
