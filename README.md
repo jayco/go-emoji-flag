@@ -281,4 +281,5 @@ func main() {
  NCL/NC - 🇳🇨
  NFK/NF - 🇳🇫
  SOM/SO - 🇸🇴
+ XKX/XK - 🇽🇰
 ```
