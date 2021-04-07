@@ -252,6 +252,7 @@ var countryMap = map[string]string{
 	"YEM": "YE",
 	"ZMB": "ZM",
 	"ZWE": "ZW",
+	"XKX": "XK",
 }
 
 // GetFlag returns a best attempt at matching a country code flag
