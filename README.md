@@ -282,4 +282,5 @@ func main() {
  NFK/NF - 🇳🇫
  SOM/SO - 🇸🇴
  XKX/XK - 🇽🇰
+ CUW/CW - 🇨🇼
 ```
