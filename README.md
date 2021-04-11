@@ -285,3 +285,7 @@ func main() {
  CUW/CW - 🇨🇼
  BES/BQ - 🇧🇶
 ```
+
+## BES/BQ Note
+
+The flag of Bonaire, Sint Eustatius and Saba (country codes BES & BQ) may render as the flag of the Netherlands on some devices as of 11/04/2021.
