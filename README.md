@@ -1,10 +1,8 @@
 # go-emoji-flag
 
-[![CircleCI](https://circleci.com/gh/jayco/go-emoji-flag.svg?style=svg)](https://circleci.com/gh/jayco/go-emoji-flag)
-[![GolangCI](https://golangci.com/badges/github.com/jayco/go-emoji-flag.svg)](https://golangci.com)
-[![Go Report Card](https://goreportcard.com/badge/github.com/jayco/go-emoji-flag)](https://golangci.com)
-
 Converts a string country code to an emoji in Go.
+
+Supports the country codes of [ISO 3166-1:2020 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) and [ISO 3166-1:2020 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) where Unicode 13.0.0 has appropriate emoji flags available.
 
 ## Install
 
@@ -281,4 +279,11 @@ func main() {
  NCL/NC - 🇳🇨
  NFK/NF - 🇳🇫
  SOM/SO - 🇸🇴
+ XKX/XK - 🇽🇰
+ CUW/CW - 🇨🇼
+ BES/BQ - 🇧🇶
 ```
+
+## BES/BQ Note
+
+The flag of Bonaire, Sint Eustatius and Saba (country codes BES & BQ) may render as the flag of the Netherlands on some devices as of 11/04/2021.
