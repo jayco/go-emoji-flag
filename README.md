@@ -6,6 +6,8 @@
 
 Converts a string country code to an emoji in Go.
 
+Supports the country codes of [ISO 3166-1:2020 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) and [ISO 3166-1:2020 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) where Unicode 13.0.0 has apropriate emoji flags available.
+
 ## Install
 
 ```
