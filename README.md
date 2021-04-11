@@ -283,4 +283,5 @@ func main() {
  SOM/SO - 🇸🇴
  XKX/XK - 🇽🇰
  CUW/CW - 🇨🇼
+ BES/BQ - 🇧🇶
 ```
